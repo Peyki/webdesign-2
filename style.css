@@ -1,0 +1,261 @@
+html {
+    background-image:linear-gradient( #FC5E55, #FA4083);
+
+}
+
+body {
+    background-image: url(images/image-lion-background.png);
+    background-position:top center;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;;
+    color: white;
+    font-size: 1.15rem;
+    /* Default font-size 16px and we wanted 18.4px so 18.4/16=1.15rem */
+    
+}
+a {
+    
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 300px;
+}
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+
+
+    
+}
+main {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.main2 {
+    min-height: 300px;
+    padding-top: 50px;
+
+
+}
+
+.cards {
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+
+}
+.cards1 {
+    background-image: url(images/image-background-card1.jpg);
+    background-position: bottom;
+    background-size: cover;
+    min-height: 250px;
+    width: 30%;
+    box-shadow: 5px 5px 5px rgba(36, 35, 35, 0.749);
+
+   
+}
+.cards2 {
+    background-image: url(images/image-background-card2.jpg);
+    background-position: bottom;
+    background-size: cover;
+
+    min-height: 250px;
+    width: 30%;
+    box-shadow: 5px 5px 5px rgba(36, 35, 35, 0.749);
+
+    
+}
+.cards3 {
+    background-image: url(images/image-background-card3.jpg);
+    background-position: bottom;
+    background-size: cover;
+    min-height: 250px;
+    width: 30%;
+    box-shadow: 5px 5px 5px rgba(36, 35, 35, 0.749);
+
+}
+
+.cards1, .cards2, .cards3 {
+/*.cards1, cards2 seklinde virgulle ayirarak yazarsan ikisini de ayri ayri dusunerek uygular eger. Birbirinden bagimsiz. */
+    padding: 30px 30px 20px 30px;
+    box-sizing: border-box;
+}
+
+.herobox1 {
+    flex : 2;
+    padding-bottom: 100px;
+
+}
+.herobox2 {
+    flex: 1;
+    padding-left: 1em;
+
+}
+h1 {
+    font-size: 3.25rem; /* 52px/16px=3.25rem */
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-shadow: 2px 2px 5px rgba(54, 51, 51, 0.742);
+
+}
+h2 {
+    font-size: 2rem; /* 32px/16px=2rem */
+    font-family: 'Playfair Display', serif;
+    margin-top: 20px;
+
+
+}
+p {
+   
+line-height: 1.75rem;
+margin-bottom: 0.5rem;
+/* iki paragraf arasini biraz daha fazla acmak icin margin kullandik ama padding'de kullanabilirdik. */
+
+}
+.cards p {
+    font-size: 0.85rem;
+    line-height: 1.25rem;
+    margin-top: 10px;
+   /*  margin: 10px 30px 20px 30px; shortcut: top,right,bottom,left*/
+}
+
+.cards i {
+    /* iconlar beyaz olarak gozukuyor cunku body kisminda hepsine beyaz renk atadik. Eger orda beyaz renk atamasi yapmasaydik iconlar beyaz olmayabilirdi. color yazip burdan da beyaz harici baska renk istersek degistirebiliriz.
+    Font Awasome or Materials.io websitelerini kullan. */
+
+
+    font-size: 100px;
+   
+}
+/* .cards a {
+    Bu islemi yapmak yerine css-reset kodlarina gidip oraya bu kodlari yazdigimizda iconlar mavi renk ve underlined olarak cikmaz. 
+    color: white;
+    text-decoration: none; 
+
+    burayi yorum satirina aldik cunku yukarda sadece a olarak tanimladik ve tum siteye uygulanacak o yuzden bu kisim gereksiz kaliyor 
+} */
+
+.mybutton {
+    background-color: white;
+    color: #FA4083;
+    font-family: 'Playfair Display', serif;
+    padding: 11px 25px ;
+    border-radius: 2px;
+    box-shadow: 3px 3px 5px rgba(46, 44, 44, 0.166);
+/* box-shadow: x y blur color. aralarinda virgul yok sadece bosluk koyarak yaz;*/
+}
+
+/* eger .mybutton kisminda margin calismazsa ayrica a.mybutton diye acarak display ve margini oraya tasi. a.mybutton birlesik yazilmasi lazim cunku mybutton a tag icinde degil yani a tage gidip icinde bir sey aramayacak a tag e direk olarak islemi uygulayacak */
+a.mybutton {
+
+    display: inline-block;
+    margin-top: 1
+    0px;
+
+}
+
+.mybutton:hover {
+    background-color: hotpink;
+    transition-duration: 1s;
+}
+
+
+nav a.mybutton {
+    margin-left:30px;
+}
+
+.navbutton{
+    font-family: 'Playfair Display', serif;
+    border: 1px solid white;
+    padding: 11px 25px;
+    display: inline-block;
+    position: relative;
+
+ 
+}   
+
+.testimonials {
+   
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-bottom: 100px;
+}
+
+
+.tbox {
+    width: 47%;
+    padding: 50px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.tbox :last-child {
+    font-size: .8rem;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 20px;
+    text-align: center;
+    
+
+    
+}
+.navbutton:hover .dropdown {
+    display: block;
+}
+.dropdown .navbutton {
+    width: 130px;
+    background-color: white;
+    
+}
+
+.dropdown .navbutton a {
+color: hotpink;
+}
+.inputwrapper {
+    margin-bottom: 20px ;
+   
+
+}
+
+input[type=text], input[type=email], textarea {
+    padding: 12px 20px; /* padding yaptik ve first name and email kutucuklari kalinlasti ve kutu halini aldi.*/
+    width: 100%; /* kutularin uzunlugunu ayarliyor*/
+    font-family:'Roboto', sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+
+}
+
+.newline {
+
+display: block;
+margin-bottom: 10px;
+}
+ 
+input[type=radio] {
+    margin-right:10px ;
+}
+
+form {
+    margin: 40px 0px;
+}
